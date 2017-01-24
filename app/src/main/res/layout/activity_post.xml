@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lifeistech.android.a025_litboard.PostActivity"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/username"
+            android:hint="ユーザー名" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/message"
+                android:layout_weight="4"
+                android:hint="投稿内容" />
+
+            <Button
+                android:text="投稿"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/post"
+                android:layout_weight="1"
+                android:hint="投稿"
+                android:onClick="onClick" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
